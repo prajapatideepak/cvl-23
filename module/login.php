@@ -25,6 +25,7 @@
         <div class="form-group d-flex">
           <h3>Log in</h3>
         </div>
+        <hr>
 
         <div class="form-group d-flex">
           <i class="fa-solid fa-circle-user fa-xl p-2"></i>
@@ -62,47 +63,13 @@
         </div>
 
         <div class="form-group d-flex btm-text">
-          <h6 style="color: black!important">Don't have an account? <a href="" style="color: red!important; font-weight:bold; ">Register here</a> </h6>
+          <h6 style="color: black!important">Don't have an account? <a href="../module/register.php" style="color: red!important; font-weight:bold; ">Register here</a> </h6>
         </div>
 
         </div>
       </form>
     </div>
   </div>
-  <!-- <div class="container d-flex justify-content-center">
-    <div class="login  d-flex justify-content-center p-4 m-4 bg-light">
-      <form>
-        <h1>Log in</h1><hr>
-        <div class="form-group d-flex align-items-center">
-          <i class="fa-solid fa-circle-user fa-xl p-2"></i>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        </div>
-        <div class="form-group d-flex align-items-center">
-          <i class="fa-solid fa-lock fa-xl p-2"></i>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
-        </div>
-        <label for="forgot passowrd" class="">Forgot Password?</label>
-        <div>
-          <input type="submit" value="Log -in" class="login-btn"><br>
-          <label for="or" class="text-secondary">Or</label>
-        </div>
-        <div class="social-login">
-          <div class="google">
-              <button><i class="fa-brands fa-google"></i>Log-in with google</button>
-          </div>
-          <div class="google">
-              <button><i class="fa-brands fa-facebook"></i>Log-in with facebook</button>
-          </div>
-          <div class="google">
-              <button><i class="fa-brands fa-apple"></i>Log-in with apple</button>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="s">Don't have an account? <a href="./register.php">Register here </a></label>              
-        </div>
-      </form>                                
-    </div>
-  </div> -->
   <!-- Login form end -->
 
   <!-- Optional JavaScript -->
