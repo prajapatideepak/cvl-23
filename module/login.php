@@ -53,7 +53,7 @@
   <div class="container d-flex mt-5">
     <div class="login-form">
 
-      <form action="./posts.php">
+      <form action="./posts.php" id="login_form" method="POST">
 
         <div class="form-group d-flex">
           <h3>Login</h3>
@@ -63,12 +63,18 @@
 
         <div class="form-group d-flex">
           <i class="fa-solid fa-circle-user fa-xl p-2"></i>
-          <input  type="email" required id="pass" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+          <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+            <input  type="email" required id="email" name="email" class="form-control" placeholder="Enter Email">
+            <label for="email" class="error" style="color:red; font-size:13px;" id="email-error"></label>
+          </div>
         </div>
+
 
         <div class="form-group d-flex">
           <i class="fa-solid fa-lock fa-xl p-2"></i>
-          <input  type="password" required id="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Password">
+          <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+            <input  type="password" required id="password" name="password" class="form-control" placeholder="Enter Password">
+          </div>
         </div>
 
         <div class="form-group d-flex ">
@@ -76,7 +82,7 @@
         </div>
 
         <div class="form-group d-flex">
-          <input type="submit" class="form-control login-btn" id="" name="login_btn" aria-describedby="emailHelp" value="Login">
+          <input type="submit" class="form-control login-btn" id="login_btn" name="login_btn" value="Login">
         </div>
         
         <label class="text-secondary d-flex">Or</label>
@@ -114,9 +120,21 @@
       </form>
     </div>
 </div>
-  
+
  <!-- Login form end -->
 
 <!-- footer start -->
    <?php include "./footer.php" ?>
 <!-- footer end -->
+<script>
+  $(document).ready(function()
+  {
+    $('form').validate({
+      rules:{
+       email:{
+         required:true
+       } 
+      }
+    });
+  });
+</script>

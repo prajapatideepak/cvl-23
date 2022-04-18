@@ -24,6 +24,7 @@
   height: 100vh;
   position: fixed;
   background: var(--clr-white) 
-  url('../images/loading.gif') no-repeat center !important;
+  url('../images/loading.gif') no-repeat center  !important;
   z-index: 99999; 
+  background-size: 40% 75% !important;
 }

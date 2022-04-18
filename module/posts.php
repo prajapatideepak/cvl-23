@@ -127,4 +127,33 @@
         }
              
     }
+
+//----------------------------------------------------------------------------
+// --------------------------- Login -----------------------------------------
+//----------------------------------------------------------------------------
+
+if(isset($_POST['login_btn'])){
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $hashedPassword = md5($password);
+    $query = "select * from user where email = '$email' and password = '$hashedPassword'";
+    $result = mysqli_query($conn, $query);
+        
+        if(mysqli_num_rows($result)){
+            while($data = mysqli_fetch_array($result)){
+                if($data['verified'] == 0){
+                    echo json_encode(['status' => 'error', 'msg' => 'Please verify your email sent to you']);
+                    exit; 
+                }
+                header("location: ./playerReg.php");
+                echo json_encode(['status' => 'success', 'msg' => 'Login successful']);
+                exit;
+            }
+        }
+        else{
+            echo json_encode(['status' => 'error', 'msg' => 'Invalid email or password']);
+            exit;
+        }
+}
 ?>
