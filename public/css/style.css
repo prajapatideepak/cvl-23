@@ -1,10 +1,11 @@
-:root {
+:root{
+  --clr-primary:#0c2f68;
+  --clr-secondary: #f7d025;
+  --clr-white:#fff;
+  --clr-black:#000;
+
   --spacer: 1rem;
 
-  --clr-primary:#FD7272;
-;
-  --clr-secondary: #FEA47F;
- --clr-text:white;
   --ff-primary: "PT Sans", sans-serif;
 
   --fw-700: 700;
@@ -17,33 +18,12 @@
 
 }
 
-/* .hiddens > *  {
-    display: none !important;
-    
-} */
-
-/* .split {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacer);
+/*----- Pre Loader Start -----*/
+#loading{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: var(--clr-white) 
+  url('../images/loading.gif') no-repeat center !important;
+  z-index: 99999; 
 }
- */
-
-/* .split > * + * {
-  margin: calc(var(--spacer) * 3) 0 0 0;
-}
-
-@media (min-width: 40em) {
-  .split {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .split > * {
-    flex-basis: 100%;
-  }
-
-  .split > * + * {
-    margin: 0 0 0 var(--spacer);
-  }
-} */

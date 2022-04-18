@@ -1,0 +1,60 @@
+:root {
+    --clr-primary: #0c2f68;
+    --clr-secondary: #f7d025;
+    --clr-white: #fff;
+    --clr-black: #000;
+
+    --spacer: 1rem;
+
+    --ff-primary: "PT Sans", sans-serif;
+
+    --fw-700: 700;
+    --fw-400: 400;
+
+    --box-shadow: 0 0.25em 1.5em rgba(0, 0, 0, 0.15);
+}
+
+
+
+h3 {
+    
+    color: var(--clr-primary) !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-circle.btn-md {
+    width: 60px;
+    height: 60px;
+    /* padding: 6px 0px; */
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+button.btn-suces
+{
+    background-color: rgb(39, 186, 39);
+    color: var(--clr-white);
+}
+@media (max-width: 767px) {
+    p.txt-cente
+    {
+       /* background-color: aquamarine; */
+       text-align: center;
+    }
+}

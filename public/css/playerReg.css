@@ -1,0 +1,77 @@
+
+:root {
+    --clr-primary: #0c2f68;
+    --clr-secondary: #f7d025;
+    --clr-white: #fff;
+    --clr-black: #000;
+
+    --spacer: 1rem;
+
+    --ff-primary: "PT Sans", sans-serif;
+
+    --fw-700: 700;
+    --fw-400: 400;
+
+    --box-shadow: 0 0.25em 1.5em rgba(0, 0, 0, 0.15);
+}
+
+
+
+h3 {
+    text-align: center !important;
+    color: var(--clr-primary) !important;
+}
+
+.player-form {
+    width: 100%;
+    height: auto;
+    justify-content: center !important;
+}
+
+
+.btn-circle.btn-md {
+    width: 60px;
+    height: 60px;
+    /* padding: 6px 0px; */
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+button.btn-next
+{
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+}
+button.btn-next:hover{
+    background-color: var(--clr-primary);
+    border: 1px solid var(--clr-secondary) !important;
+    color: var(--clr-white);    
+}
+button.btn-cancel:hover{
+    border: 1px solid var(--clr-primary) !important;
+    color: black !important;
+}
+button.btn-cancel {
+    background-color: orange !important;
+    color: white!important;
+}
+.btn_container{
+    height: 150px;
+}
+
+@media (max-width:767px)
+{
+    .txt-center
+    {
+        text-align: center;
+    }
+}

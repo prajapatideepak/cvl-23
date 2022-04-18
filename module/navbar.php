@@ -1,4 +1,5 @@
-  <!-- start navbar -->
+
+<!-- start navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark" id="text">
     <a id="text" class="navbar-brand m-auto" href="./">Logo</a>
 
@@ -8,19 +9,19 @@
 
   <div  class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul  class="navbar-nav m-auto">
-      <li class="nav-item">
-        <a  class="nav-link" href="#">Matches</a>
+      <li class="nav-item mr-4">
+        <a  class="nav-link" href="#">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Videos</a>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="#">News</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Stats</a>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="#">Registration</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Team</a>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="#">About Us</a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="#">News</a>
       </li>
       <li class="nav-item">
@@ -36,10 +37,10 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </li>
+      </li> -->
     </ul>
     <li class="nav-item  navbar-right">
-      <a  class="btn nav-link" href="./module/login.php">Log-in</a>
+      <a  class="btn nav-link" href="./module/login.php">LogIn</a>
     </li>
   </div>
   </nav>

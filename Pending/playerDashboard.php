@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <link rel="stylesheet" href="../public/css/playerInfo.css">
+    <link rel="stylesheet" href="playerDashboard.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -16,28 +16,79 @@
 </head>
 
 <body>
-    <div class="container-fluid bg-danger ">hii</div>
-    <div class="container bg-secondar">
+    <div class="container ">
         <div class="row">
             <div class="col-md-4 ">
-                <h2>
+                <h3>
                     <p class="txt-cente">Welcome User</p>
-                </h2>
+                </h3>
             </div>
             <div class="col-md-8 ">
-                <h2>
-                    <p class="text-danger txt-cente ">Player Information</p>
-                </h2>
+                <h3>
+                    <p class=" txt-cente ">Player Information</p>
+                </h3>
             </div>
             <div class="col-md-12 d-flex m-0 justify-content-center ">
                 <hr style="width: 450px; height: 2px;">
             </div>
-            <div class="container  border d-flex justify-content-center align-item-center">
-                <div class=" ">
+            <div class="container  d-flex justify-content-center align-item-center">
+                <div class="border p-5 ">
                     <div class="row">
-                        <div class="col-md-12 text-center my-2">
-                            <button type="file" class="btn btn-primary btn-circle btn-md"><img src="" alt="...">
-                            </button>
+                        <div class="col-md-12 col-sm-12 my-3 d-flex justify-content-center">
+                            <h5>You are Member Of Following Teams</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="my-3">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Sr No.</th>
+                                        <th scope="col">Team Logo</th>
+                                        <th scope="col">Team Name</th>
+                                        <th scope="col">Team Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td><i class="px-4 fa-solid fa-user"></i></td>
+                                        <td>Abc_Team1</td>
+                                        <td>Team 1 Details..</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td><i class="px-4 fa-solid fa-user"></i></td>
+                                        <td>Abc_Team2</td>
+                                        <td>Team 1 Details..</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3">
+                            <div class="col-md-12 col-sm-12 ">
+                                <p>If you want to Exit from the team contact the team owner.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 d-flex justify-content-center">
+                            <h4>Your Profile Information</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center my-2 d-flex justify-content-center">
+                            <label
+                                class="custom-file-upload fa-solid fa-user  btn btn-circle btn-outline-dark d-flex justify-content-center align-items-center btn-md ">
+                                <input type="file" />
+                            </label>
                         </div>
                     </div>
 
@@ -61,7 +112,7 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control mx-1" id="exampleFormControlInput1"
                                     placeholder="Abc">
-                                <span><i class="fa-solid fa-pen-to-square"></i></span>
+
                             </div>
                         </div>
 
@@ -74,14 +125,14 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control mx-1" id="exampleFormControlInput1"
                                     placeholder="Abc">
-                                <i class="fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Mobile Number(What
+                                <label for="exampleFormControlInput1" class="form-label">Mobile No.(Whats
                                     App):</label>
                             </div>
                         </div>
@@ -89,7 +140,7 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control mx-1" id="exampleFormControlInput1"
                                     placeholder="0123456789">
-                                <i class="fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                     </div>
@@ -103,7 +154,7 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control mx-1" id="exampleFormControlInput1"
                                     placeholder="0123456789">
-                                <i class="fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                     </div>
@@ -117,7 +168,7 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control mx-1" id="exampleFormControlInput1"
                                     placeholder="Abc@gmail.com">
-                                <i class="fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                         <div class="col-md-2">
@@ -129,37 +180,26 @@
                             <div class="mb-3 d-flex">
                                 <input type="date" class="form-control mx-1" id="exampleFormControlInput1"
                                     placeholder="Male">
-                                <i class="fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-1">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Gender:</label>
+                        <div class="col-md-12 col-sm-12 d-flex justify-content-between">
+                            <div class="container-fluid m-0 p-0">
+                                <label for="" class="form-label ">Gender:</label>
                             </div>
-                        </div>
-                        <div class="col-md-10 d-flex justify-content-center">
-                            <div class="row ">
-                                <div class="col-md-2">
-                                    <label for="" class="form-label">Male</label>
-                                </div>
-                                <div class="col-md-2">
-                                    <input type="radio" name="g" class=" form-check-input">
-                                </div>
-                                <div class="col-md-2">
-                                    <label for="" class="form-label">Female</label>
-                                </div>
-                                <div class="col-md-2">
-                                    <input type="radio" name="g" class=" form-check-input">
-                                </div>
-                                <div class="col-md-2">
-                                    <label for="" class="form-label">Other</label>
-                                </div>
-                                <div class="col-md-2  ">
-                                    <input type="radio" name="g" class=" form-check-input">
-                                    <!-- <i class=" fa-solid fa-pen-to-square"></i> -->
-                                </div>
+                            <div class="container ml-1 p-0">
+                                <input type="radio" name="g" class="form-check-input">
+                                <label for="male" class="from-label">Male</label>
+                            </div>
+                            <div class="container m-0 p-0">
+                                <input type="radio" name="g" class="form-check-input">
+                                <label for="male" class="from-label">Female</label>
+                            </div>
+                            <div class="container m-0 p-0">
+                                <input type="radio" name="g" class="form-check-input">
+                                <label for="male" class="from-label">Other</label>
                             </div>
                         </div>
                     </div>
@@ -171,7 +211,7 @@
                     <div class="row">
                         <div class="col-md-12 d-flex">
                             <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
-                            <i class="mx-2 fa-solid fa-pen-to-square"></i>
+
                         </div>
                     </div>
                     <div class="row my-3">
@@ -183,7 +223,7 @@
                                 <option value="" class="">Ahmedabad</option>
                                 <option value="">Surat</option>
                             </select>
-                            <i class="mx-2 fa-solid fa-pen-to-square"></i>
+
                         </div>
                         <div class="col-md-2">
                             <label for="" class="form-label">State:</label>
@@ -193,7 +233,7 @@
                                 <option value="" class="">Gujrat</option>
                                 <option value="">Rajsthan</option>
                             </select>
-                            <i class=" mx-2 fa-solid fa-pen-to-square"></i>
+
                         </div>
                     </div>
                     <div class="row">
@@ -206,7 +246,7 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control" id="exampleFormControlInput1"
                                     placeholder="Abc">
-                                <i class=" mx-2 fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                         <div class="col-md-2">
@@ -218,7 +258,7 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control" id="exampleFormControlInput1"
                                     placeholder="000000">
-                                <i class="mx-2 fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                     </div>
@@ -232,7 +272,7 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control" id="exampleFormControlInput1"
                                     placeholder="000.00">
-                                <i class="mx-2 fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                         <div class="col-md-2">
@@ -244,7 +284,7 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control" id="exampleFormControlInput1"
                                     placeholder="00.00">
-                                <i class=" mx-2 fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                     </div>
@@ -258,7 +298,7 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control" id="exampleFormControlInput1"
                                     placeholder="xyz">
-                                <i class=" mx-2 fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                         <div class="col-md-2">
@@ -270,7 +310,7 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control" id="exampleFormControlInput1"
                                     placeholder="xyz">
-                                <i class="mx-2 fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                     </div>
@@ -284,7 +324,7 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control" id="exampleFormControlInput1"
                                     placeholder="000">
-                                <i class=" mx-2 fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                         <div class="col-md-2">
@@ -296,7 +336,7 @@
                             <div class="mb-3 d-flex">
                                 <input type="email" class="form-control" id="exampleFormControlInput1"
                                     placeholder="xyz">
-                                <i class="mx-2 fa-solid fa-pen-to-square"></i>
+
                             </div>
                         </div>
                     </div>
@@ -308,13 +348,13 @@
                     <div class="row">
                         <div class="col-md-12 d-flex">
                             <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
-                            <i class="mx-2 fa-solid fa-pen-to-square"></i>
+
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 my-2 d-grid gap-2 mx-auto">
-                            <button class="btn btn-primary btn-lg">
-                                Edit Profile
+                            <button class="btn btn-suces btn-lg">
+                                Update Profile
                             </button>
                         </div>
                     </div>

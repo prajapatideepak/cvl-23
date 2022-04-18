@@ -1,81 +1,122 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../public/css/style.css">
-    <link rel="stylesheet" href="../public/css/login.css?v=<?php echo time()?>">
-    <link rel="stylesheet" href="../public/css/navbar.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>index</title>
-  </head>
-  <body>
-  
-  <!-- start navbar -->
-  <?php include "./navbar.php"?> 
-  <!-- end navbar -->
+<!-- header start -->
+  <?php include "./header.php" ?>
+<!-- header end -->
 
-  <!-- Login form start -->
+<!-- start navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" id="text">
+    <a id="text" class="navbar-brand m-auto" href="./">Logo</a>
+
+    <button class="navbar-toggler dark-text" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon dark-text"></span>
+  </button>
+
+  <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul  class="navbar-nav m-auto">
+      <li class="nav-item mr-4">
+        <a  class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="#">News</a>
+      </li>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="#">Registration</a>
+      </li>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Gallery</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> -->
+    </ul>
+    <!-- <li class="nav-item  navbar-right">
+      <a  class="btn nav-link" href="./module/login.php">LogIn</a>
+    </li> -->
+  </div>
+  </nav>
+<!-- end navbar -->
+
+<!-- Login form start -->
   <div class="container d-flex mt-5">
     <div class="login-form">
 
-      <form action="">
+      <form action="./posts.php">
 
         <div class="form-group d-flex">
-          <h3>Log in</h3>
+          <h3>Login</h3>
         </div>
-        <hr>
+        <hr style="width: 300px; height: 2px;">
+
 
         <div class="form-group d-flex">
           <i class="fa-solid fa-circle-user fa-xl p-2"></i>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input  type="email" required id="pass" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
         </div>
 
         <div class="form-group d-flex">
           <i class="fa-solid fa-lock fa-xl p-2"></i>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter password">
+          <input  type="password" required id="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Password">
+        </div>
+
+        <div class="form-group d-flex ">
+          <h6><a href="" style="color: #0c2f68 !important; text-decoration: none !important; ">Forgot Password?</a></h6>
         </div>
 
         <div class="form-group d-flex">
-          <h6>Forgot Password?</h6>
-        </div>
-
-        <div class="form-group d-flex">
-          <input type="submit" class="form-control login-btn" id="exampleInputEmail1" aria-describedby="emailHelp" value="Log -in">
+          <input type="submit" class="form-control login-btn" id="" name="login_btn" aria-describedby="emailHelp" value="Login">
         </div>
         
         <label class="text-secondary d-flex">Or</label>
         
-        <div class="social-btn" style="border: 2px solid;">
-
-          <div class="form-group d-flex google-btn">
-            <button type="button" class="btn w-100 google-btn "><i class="fa-brands fa-google mr-5"></i>Login With Google</button>
-          </div>
-
-          <div class="form-group d-flex facebook-btn">
-            <button type="button" class="btn w-100 facebook-btn"><i class="fa-brands fa-facebook mr-5"></i>Login With Facebook</button>
-          </div>
-
-          <div class="form-group d-flex apple-btn">
-            <button type="button" class="btn w-100 apple-btn"><i class="fa-brands fa-apple mr-5"></i>Login With Apple</button>
-          </div> 
-        </div>
-
-        <div class="form-group d-flex btm-text">
-          <h6 style="color: black!important">Don't have an account? <a href="../module/register.php" style="color: red!important; font-weight:bold; ">Register here</a> </h6>
-        </div>
-
+<div class="container ">
+  <div class="mb-2  ">
+    <a href="#"  class="btns  col-12 p-2  " >
+        <i class="fa-brands fa-google mr-4"></i>
+          <span>
+            Login With Google
+          </span>  
+    </a>
+    </div>    
+      <div class=" mb-2 ">
+        <a href="#" class="btns col-12 p-2" ><i class="fa-brands fa-facebook  mr-4"></i>
+            <span>
+              Login With Facebook
+            </span>
+        </a>
+      </div>    
+      <div class=" mb-2 ">
+        <a href="#" class="btns col-12 p-2" >
+          <i
+          class="fa-brands fa-apple  mr-4"></i>
+          <span>
+            Log in With Apple
+          </span>
+        </a>
+      </div>
+</div>
+      <div class="form-group d-flex btm-text">
+        <h6 style="color: black!important">Don't have an account? <a href="./register.php" style="color: #f7d025!important; font-weight:bold; text-decoration: none !important;">Register here</a> </h6>
+      </div>
         </div>
       </form>
     </div>
-  </div>
-  <!-- Login form end -->
+</div>
+  
+ <!-- Login form end -->
 
-  <!-- Optional JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>  
-</body>
-</html>
+<!-- footer start -->
+   <?php include "./footer.php" ?>
+<!-- footer end -->
