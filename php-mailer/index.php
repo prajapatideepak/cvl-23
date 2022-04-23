@@ -22,8 +22,15 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;           // (587 = PHPMailer::ENCRYPTION_STARTTLS, 465 = PHPMailer::ENCRYPTION_SMTPS)
     $mail->Port       = 465;                                    //465 = ssl, 587 = tls
 
+    $mail->SMTPOptions = array(
+        'ssl' => array(
+                    'verify_peer' => false, 
+                    'verify_peer_name'=>false, 
+                    'allow_self_signed'=>true
+                )
+    );
     //Recipients
-    $mail->setFrom('test.sadik.email@gmail.com', 'Sport');
+    $mail->setFrom('test.sadik.email@gmail.com', 'CVL');
     // $mail->addAddress('joe@example.net', 'Joe User');     //Add a recipient
     $mail->addAddress($to);               //Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
@@ -40,6 +47,7 @@ try {
     $mail->Body    = $body;
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
+    $status=NULL;
     if($mail->send()){
         $status = true;
     }else{

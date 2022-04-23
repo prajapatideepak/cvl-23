@@ -1,7 +1,7 @@
 
 <!-- start navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark" id="text">
-    <a id="text" class="navbar-brand m-auto" href="./">Logo</a>
+    <a id="text" class="navbar-brand m-auto" href="index.php">Logo</a>
 
     <button class="navbar-toggler dark-text" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon dark-text"></span>
@@ -10,13 +10,13 @@
   <div  class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul  class="navbar-nav m-auto">
       <li class="nav-item mr-4">
-        <a  class="nav-link" href="#">Home</a>
+        <a  class="nav-link" href="index.php">Home</a>
       </li>
       <li class="nav-item mr-4">
-        <a class="nav-link" href="#">News</a>
+        <a class="nav-link" href="news.php">News</a>
       </li>
       <li class="nav-item mr-4">
-        <a class="nav-link" href="#">Registration</a>
+        <a class="nav-link" href="register.php">Registration</a>
       </li>
       <li class="nav-item mr-4">
         <a class="nav-link" href="#">About Us</a>
@@ -40,7 +40,7 @@
       </li> -->
     </ul>
     <li class="nav-item  navbar-right">
-      <a  class="btn nav-link" href="./module/login.php">LogIn</a>
+      <a  class="btn nav-link" href="./login.php">LogIn</a>
     </li>
   </div>
   </nav>

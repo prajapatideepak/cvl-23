@@ -21,8 +21,7 @@
 <!-- header end -->
 
 <!----- Pre Loader Start ----->
-<div id="loading">         
-</div>
+<div id="loading"></div>
     <script>
         var preloader = document.getElementById('loading');
            function loaderFunction(){
@@ -32,9 +31,9 @@
 <!----- Pre Loader End ----->
 
 <!-- start navbar -->
-<?php include "./module/navbar.php"?>
+<?php include "navbar.php"?>
 <!-- end navbar -->
 
 <!-- footer start -->
-<?php include "./module/footer.php" ?>
+<?php include "footer.php" ?>
 <!-- footer end -->
