@@ -1,0 +1,84 @@
+:root {
+    --clr-primary:#0c2f68;
+    --clr-secondary: #f7d025;
+    --clr-white:#fff;
+    --clr-black:#000;
+
+    --spacer: 1rem;
+  
+    --ff-primary: "PT Sans", sans-serif;
+  
+    --fw-700: 700;
+    --fw-400: 400;
+  
+    /* --box-shadow: 0 0.25em 1.5em rgba(0, 0, 0, 0.15); */
+    --box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+*{
+    justify-content: center;
+}
+
+.login-form{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow)!important;
+    border-radius: 10px;
+    border: 1px solid var(--clr-primary);
+    width: auto;
+}
+
+.login-form h3{
+    color: var(--clr-primary)!important;
+}
+
+.login-form h6{
+    margin-left: auto;
+}
+
+.login-btn{
+    color: var(--clr-primary)!important;
+    background-color: var(--clr-secondary)!important;
+}
+
+.login-btn:hover{
+    color: var(--clr-secondary) !important;
+    background-color: var(--clr-primary)!important;
+}
+
+.google-btn{
+    background-color: white!important;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: none!important;
+}
+
+.facebook-btn{
+    background-color: white!important;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: none!important;
+}
+
+.apple-btn{
+    background-color: white!important;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: none!important;
+}
+
+.btns{
+    padding: 2rem 3rem !important;
+    font-size: var(--fw-700);
+    border: 0.5px solid gray;
+    display: inline-block;
+    border-radius: 0.2rem;
+    text-decoration: none !important;
+    color: black;
+}
+
+.btns:hover{
+    color: var(--clr-secondary) !important;
+    background-color: var(--clr-primary)!important;
+}

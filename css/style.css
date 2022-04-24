@@ -1,0 +1,413 @@
+:root{
+    --clr-primary:#0c2f68;
+    --clr-secondary: #f7d025;
+    --clr-white:#fff;
+    --clr-black:#000;
+  
+    --spacer: 1rem;
+  
+    --ff-primary: "PT Sans", sans-serif;
+  
+    --fw-700: 700;
+    --fw-400: 400;
+  
+    --box-shadow: 0 0.25em 1.5em rgba(0, 0, 0, 0.15);
+}
+  
+*{
+    justify-content: center;
+}
+  
+/*----- Pre Loader Start -----*/
+#loading{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: var(--clr-white) 
+    url('../images/loading.gif') no-repeat center  !important;
+    z-index: 99999; 
+    background-size: 40% 75% !important;
+}
+/*----- Pre Loader end -----*/
+
+/* ----- Navbar css start ----- */
+nav a{
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+.navbar-brand{
+    position: relative;
+    background-image: url("../images/logo.png") !important;
+    width: 100px;
+    height: 50px;
+    left: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav.navbar{
+    background-color: var(--clr-primary);
+    color: var(--clr-text);
+}
+
+.navbar-nav a.nav-link{
+  position: relative;
+  padding: 0.8rem 1.2rem;
+  color: var(--white);
+  transition: font-weight 0.3s ease-in-out;
+}
+
+.navbar-nav a.nav-link.active{
+  font-weight: 600;
+  transition: font-weight 0.3s ease-in-out;
+}
+
+.navbar-nav a.nav-link:before{
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 0;height: 2px;
+  border-top: 2px solid var(--clr-secondary);
+  transition: all 0.4s linear;
+}
+.navbar-nav a.nav-link:hover:before{
+ width: 100%;
+}
+
+nav .nav-link{
+  color: var(--clr-white)!important;
+}
+
+ .btn{
+    font-size: var(--fw-700);
+    font-weight: bold;
+    border: 1px solid var(--clr-secondary);
+    box-shadow: var(--box-shadow);
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary)!important;
+}
+
+ .btn:hover{
+background-color: var(--clr-primary);
+color: var(--clr-secondary)!important;
+border: 2px solid var(--clr-white)!important;
+}
+
+input{
+    max-width: 40rem;
+}
+
+.login{
+    box-shadow: var(--box-shadow);
+    padding: var(--spacer);
+    border-radius:var(--spacer) ;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+    /* gap: var(--spacer); */
+  }
+  
+  .split > * + * {
+    margin: calc(var(--spacer) * 1.5) 0 0 0;
+  }
+  
+  @media (min-width: 40em) {
+    .split {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .split > * {
+      flex-basis: 100%;
+    }
+  
+    .split > * + * {
+      margin: 0 0 0 var(--spacer);
+    }
+  }
+/* ----- Navbar css end----- */
+
+/* ----- landing page css start ----- */
+.landing-page  .subtitle{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 2vw;
+    display: flex;
+    font-size: 4.5vw;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.landing-page .mainhead{
+    font-family: 'Orbitron';
+    font-size: 4.5vw;
+}
+  
+.landing-page .space-h{
+    letter-spacing: 1vw;
+}
+
+.landing-page .desc{
+    font-family: 'Montserrat';
+    font-size: 2.3vw;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.landing-page .p-deep{
+    padding:1vh 5vw !important ;
+    margin: 2vh 4vw 0vh 0;
+    font-weight: bold;
+} 
+
+.landing-page .shade{
+    /* transform: rotate(-20deg);    */
+    width: 100%;
+    display: block;
+    /* width: 12rem;   */
+}
+
+.landing-page .okkk{
+    background-image: linear-gradient(orange, white);
+    padding: 60rem 60rem 40rem;
+} 
+/* ----- landing page css end -----  */
+
+/* ----- footer css start ----- */
+.page-footer , .page-footer a{
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+    text-decoration: none;
+}
+/* ----- footer css end ----- */
+
+/* ----- login form css start ----- */
+.login-bg-img{
+    /* background-image: url("../images/login_register_bg.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-form{
+    background-color: var(--clr-white) !important;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow)!important;
+    border: 1px solid var(--clr-primary);
+    width: auto;
+}
+
+.login-form h3{
+    color: var(--clr-primary)!important;
+} 
+
+.login-form .forgotPassword-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--clr-primary);
+}
+
+.login-form .forgotPassword-link:hover{
+    color: var(--clr-secondary);
+}
+.login-form .login-btn{
+    color: var(--clr-primary)!important;
+    background-color: var(--clr-secondary)!important;
+}
+
+.login-form .login-btn:hover{
+    color: var(--clr-secondary) !important;
+    background-color: var(--clr-primary)!important;
+}
+
+.login-form .btns{
+    font-size: var(--fw-700);
+    border: 0.5px solid gray;
+    display: inline-block;
+    border-radius: 0.2rem;
+    text-decoration: none !important;
+    /* max-height:1rem !important ; */
+    padding: 0.6rem 1.5rem  !important;
+    color: black;
+}
+
+.login-form .btns:hover{
+    color: var(--clr-secondary) !important;
+    background-color: var(--clr-primary)!important;
+} 
+
+.login-form .bottom-text h6{
+    color: var(--clr-black);
+}
+
+.login-form .bottom-text-link{
+    color: var(--clr-secondary);
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.login-form .bottom-text-link:hover{
+    color: var(--clr-primary);
+}
+/* ----- login form css start ----- */
+
+/* ----- register form css start ----- */
+.register{
+    box-shadow: var(--box-shadow)!important;
+    border-radius: 10px;
+    border: 1px solid var(--clr-primary);
+    width: auto;
+}
+
+.register h3{
+    color: var(--clr-primary) !important;
+}
+
+.register .register-as{
+    color: var(--clr-primary)!important;
+}
+
+.register_as{
+    overflow: hidden;
+}
+
+.register_as button{
+    cursor: pointer;
+    border: 1px solid var(--clr-secondary) !important;
+}
+
+ .round_link{
+    background-color: var(--clr-primary);
+    border: none!important;
+    padding: 0.5rem 0.8rem;
+}
+
+.register_as .fa-user{
+    color: var(--clr-secondary);
+}
+.fa-users{
+    color: var(--clr-secondary);
+}
+
+.fa-trophy{
+    color: var(--clr-secondary)!important;
+}
+
+.rg-as h4{
+    color: var(--clr-primary)!important;
+}  
+
+.rlink .round_link{
+    /* background-color: red;
+    padding: 10px; */
+}
+/* ----- register form css start ----- */
+
+/* landing page css start */
+.subtitle{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 2vw;
+    display: flex;
+    font-size: 4.5vw;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.1);
+  }
+
+  .mainhead{
+    font-family: 'Orbitron';
+    font-size: 5vw;
+  }
+  
+  .space-h{
+    letter-spacing: 1vw;
+  }
+
+  .desc{
+    font-family: 'Montserrat';
+    font-size: 2.3vw;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .p-deep{
+    padding:1vh 5vw !important ;
+    margin: 2vh 3vw 0vh 0;
+    font-weight: bold;
+  } 
+  .shade{
+    /* transform: rotate(-20deg); */
+    margin-top:0px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .mask{
+    background: linear-gradient(144.61deg, #F7D025 2.9%, rgba(249, 249, 249, 0) 89.33%);
+    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.05));
+       
+    position:absolute;
+    border-radius: 20rem 20rem 20rem;
+  }
+  .okkk{
+    background-image: linear-gradient(orange, white);
+    padding: 60rem 60rem 40rem;
+  } 
+
+/* landing page css end  */
+
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%) !important;
+}.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%) !important;
+}
+
+
+
+/* visitor home */
+
+.bg_live{
+background: linear-gradient(102.68deg, rgba(222, 186, 28, 0.8) -9.44%, rgba(60, 101, 167, 0.8) 93.37%);
+box-shadow: 0px 4px 4px rgba(12, 47, 104, 0.16);
+
+}
+    
+.dark_head{
+font-size:3.5vw;
+font-weight: 900  ;
+letter-spacing: 2vw;
+padding: 1rem 2rem;
+
+}
+
+
+.up_card{
+min-width: 18rem;
+background: linear-gradient(147.32deg, rgba(88, 201, 78, 0.28) -2.52%, #0C2F68 105.51%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+border-radius: 8px;
+text-align: center !important;
+color: white !important;
+}
+
+.dark{
+    color: #000 !important;
+}
+
+.nav-item .btn{
+    color: var(--clr-primary) !important;
+}
+
+
+.nav-item .btn:hover{
+    color:var(--clr-white) !important;
+}
+
